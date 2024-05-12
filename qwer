@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Введите высоту треугольника: ";
+    cin >> n;
+
+    // Внешний цикл для строк
+    for (int i = 1; i <= n; i++) {
+        // Внутренний цикл для пробелов
+        for (int j = 1; j <= n - i; j++) {
+            cout << " ";
+        }
+
+        // Внутренний цикл для звездочек
+        for (int k = 1; k <= 2 * i - 1; k++) {
+            cout << "*";
+        }
+
+        // Переход на новую строку
+        cout << endl;
+    }
+
+    return 0;
+}
